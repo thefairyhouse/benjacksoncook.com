@@ -125,6 +125,10 @@ const records: VideoItem[] = [
     url: "https://www.youtube.com/watch?v=cE3nBiuTfQ4&list=RDcE3nBiuTfQ4&start_radio=1",
   },
   {
+    title: "Sam Fischer — Songwriting",
+    url: "https://www.youtube.com/watch?v=8U6Zll3ikIg&list=RD8U6Zll3ikIg&start_radio=1",
+  },
+  {
     title: "Don Broco & Nickelback — Songwriting",
     url: "https://youtu.be/jcrNNpMkBQ4",
   },
