@@ -133,7 +133,7 @@ const records: VideoItem[] = [
     url: "https://www.youtube.com/watch?v=EsmaAk5MDz8",
   },
   {
-    title: "P!nk — Songwriting",
+    title: "P!nk — Songwriting / Production / Piano",
     url: "https://www.youtube.com/watch?v=ilut9TzMfXs",
   },
   {
