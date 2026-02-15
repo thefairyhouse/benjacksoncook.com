@@ -141,7 +141,7 @@ const records: VideoItem[] = [
     url: "https://www.youtube.com/watch?v=enomoC1cSO4",
   },
   {
-    title: "Nothing But Thieves — Songwriting / Production",
+    title: "Nothing But Thieves — Songwriting",
     url: "https://www.youtube.com/watch?v=xVf2DXAnQFo",
   },
   {
@@ -163,6 +163,10 @@ const records: VideoItem[] = [
 ];
 
 const broadcast: VideoItem[] = [
+  {
+    title: "Rag’n’Bone Man — Musical Director / Keys",
+    url: "https://www.youtube.com/watch?v=zA-zoyipi6A",
+  },
   {
     title: "The BRIT Awards (Calvin Harris) — Vocal Arrangement",
     url: "https://www.youtube.com/watch?v=SMRVFIrPevA",
@@ -192,8 +196,8 @@ const broadcast: VideoItem[] = [
     url: "https://www.youtube.com/watch?v=rjBDxcnfSMw",
   },
   {
-    title: "Rag’n’Bone Man — Musical Director / Keys",
-    url: "https://www.youtube.com/watch?v=zA-zoyipi6A",
+    title: "Rag’n’Bone Man — Songwriting / Keys / Arrangement",
+    url: "https://www.youtube.com/watch?v=JYEEGTIWmoI&list=RDJYEEGTIWmoI&start_radio=1",
   },
 ];
 
