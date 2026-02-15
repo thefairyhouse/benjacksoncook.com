@@ -266,13 +266,16 @@ export default function Home() {
 
       <main id="top">
         <section className="relative min-h-[100svh]">
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(180deg, rgba(245,242,235,0.2) 0%, rgba(245,242,235,1) 70%), radial-gradient(1200px 600px at 50% 10%, rgba(26,26,26,0.25) 0%, rgba(26,26,26,0) 60%)",
-            }}
+          <Image
+            src="/photos/IMG_2537.JPG"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
+          <div className="absolute inset-0 bg-[var(--light)]/35" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--light)]/55 to-[var(--light)]" />
           <div className="relative mx-auto flex min-h-[100svh] max-w-6xl items-center px-6">
             <div className="max-w-3xl">
               <h1 className="heading text-5xl leading-[1.05] tracking-tight sm:text-6xl">
@@ -325,6 +328,20 @@ export default function Home() {
               </div>
             </FadeInSection>
 
+            <div className="mt-12 overflow-hidden rounded-[6px]">
+              <div className="relative aspect-[21/9] w-full">
+                <Image
+                  src="/photos/000158150003.jpg"
+                  alt=""
+                  fill
+                  sizes="100vw"
+                  className="object-cover"
+                  priority={false}
+                />
+                <div className="absolute inset-0 bg-black/35" />
+              </div>
+            </div>
+
             <div className="mt-12 grid grid-cols-1 gap-x-10 gap-y-14 md:grid-cols-2">
               {broadcast.map((v) => (
                 <FadeInSection key={v.title}>
@@ -346,7 +363,18 @@ export default function Home() {
                   Writing records. Producing artists. Leading live shows.
                 </div>
 
-                <div className="mx-auto mt-12 h-64 w-64 rounded-[6px] bg-black/10" />
+                <div className="mx-auto mt-12 w-full max-w-sm overflow-hidden rounded-[6px] bg-black/10">
+                  <div className="relative aspect-[4/5] w-full">
+                    <Image
+                      src="/photos/Scan@harriettkbols.JPG"
+                      alt=""
+                      fill
+                      sizes="(min-width: 768px) 24rem, 90vw"
+                      className="object-cover"
+                      priority={false}
+                    />
+                  </div>
+                </div>
               </div>
             </FadeInSection>
           </div>
