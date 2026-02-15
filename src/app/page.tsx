@@ -121,6 +121,10 @@ const records: VideoItem[] = [
     url: "https://www.youtube.com/watch?v=EsmaAk5MDz8",
   },
   {
+    title: "Muroki — Songwriting",
+    url: "https://www.youtube.com/watch?v=cE3nBiuTfQ4&list=RDcE3nBiuTfQ4&start_radio=1",
+  },
+  {
     title: "Don Broco & Nickelback — Songwriting",
     url: "https://youtu.be/jcrNNpMkBQ4",
   },
