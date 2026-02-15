@@ -141,6 +141,10 @@ const records: VideoItem[] = [
     url: "https://www.youtube.com/watch?v=8U6Zll3ikIg&list=RD8U6Zll3ikIg&start_radio=1",
   },
   {
+    title: "Tabitha Smyth — Songwriting / Production",
+    url: "https://www.youtube.com/watch?v=eRvV_VOIGO8&list=RDeRvV_VOIGO8&start_radio=1",
+  },
+  {
     title: "Nothing But Thieves — Songwriting",
     url: "https://www.youtube.com/watch?v=xVf2DXAnQFo",
   },
