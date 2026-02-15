@@ -117,28 +117,28 @@ function YouTubeTile({ title, url }: VideoItem) {
 
 const records: VideoItem[] = [
   {
-    title: "Rag’n’Bone Man — Songwriting",
-    url: "https://www.youtube.com/watch?v=EsmaAk5MDz8",
-  },
-  {
-    title: "Muroki — Songwriting",
-    url: "https://www.youtube.com/watch?v=cE3nBiuTfQ4&list=RDcE3nBiuTfQ4&start_radio=1",
-  },
-  {
-    title: "Sam Fischer — Songwriting",
-    url: "https://www.youtube.com/watch?v=8U6Zll3ikIg&list=RD8U6Zll3ikIg&start_radio=1",
-  },
-  {
     title: "Don Broco & Nickelback — Songwriting",
     url: "https://youtu.be/jcrNNpMkBQ4",
+  },
+  {
+    title: "Dottie Andersson — Songwriting / Production",
+    url: "https://www.youtube.com/watch?v=enomoC1cSO4",
+  },
+  {
+    title: "Rag’n’Bone Man — Songwriting / Keys / Arrangement",
+    url: "https://www.youtube.com/watch?v=JYEEGTIWmoI&list=RDJYEEGTIWmoI&start_radio=1",
+  },
+  {
+    title: "Rag’n’Bone Man — Songwriting",
+    url: "https://www.youtube.com/watch?v=EsmaAk5MDz8",
   },
   {
     title: "P!nk — Songwriting",
     url: "https://www.youtube.com/watch?v=ilut9TzMfXs",
   },
   {
-    title: "Dottie Andersson — Songwriting / Production",
-    url: "https://www.youtube.com/watch?v=enomoC1cSO4",
+    title: "Sam Fischer — Songwriting",
+    url: "https://www.youtube.com/watch?v=8U6Zll3ikIg&list=RD8U6Zll3ikIg&start_radio=1",
   },
   {
     title: "Nothing But Thieves — Songwriting",
@@ -159,6 +159,10 @@ const records: VideoItem[] = [
   {
     title: "Lucy Blue — Songwriting / Production",
     url: "https://www.youtube.com/watch?v=u96C-Yu_I5Q",
+  },
+  {
+    title: "Muroki — Songwriting",
+    url: "https://www.youtube.com/watch?v=cE3nBiuTfQ4&list=RDcE3nBiuTfQ4&start_radio=1",
   },
 ];
 
@@ -195,10 +199,6 @@ const broadcast: VideoItem[] = [
     title: "MTV Push — Arrangement / Keys",
     url: "https://www.youtube.com/watch?v=rjBDxcnfSMw",
   },
-  {
-    title: "Rag’n’Bone Man — Songwriting / Keys / Arrangement",
-    url: "https://www.youtube.com/watch?v=JYEEGTIWmoI&list=RDJYEEGTIWmoI&start_radio=1",
-  },
 ];
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -214,9 +214,6 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
 
 export default function Home() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [showAllRecords, setShowAllRecords] = useState(false);
-
-  const recordsToShow = showAllRecords ? records : records.slice(0, 6);
 
   return (
     <div className="min-h-screen bg-[var(--light)] text-[var(--dark)]">
@@ -298,24 +295,12 @@ export default function Home() {
             </FadeInSection>
 
             <div className="mt-12 grid grid-cols-1 gap-x-10 gap-y-14 md:grid-cols-2">
-              {recordsToShow.map((v) => (
+              {records.map((v) => (
                 <FadeInSection key={v.title}>
                   <YouTubeTile title={v.title} url={v.url} />
                 </FadeInSection>
               ))}
             </div>
-
-            {!showAllRecords ? (
-              <div className="mt-14 flex justify-center">
-                <button
-                  type="button"
-                  onClick={() => setShowAllRecords(true)}
-                  className="text-sm tracking-wide text-[var(--accent)] hover:underline"
-                >
-                  Load more
-                </button>
-              </div>
-            ) : null}
           </div>
         </section>
 
