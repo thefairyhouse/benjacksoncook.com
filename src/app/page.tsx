@@ -153,7 +153,7 @@ const records: VideoItem[] = [
     url: "https://www.youtube.com/watch?v=DwhTlXvLMr8",
   },
   {
-    title: "Valencia Grace — Songwriting",
+    title: "Valencia Grace — Songwriting / Production",
     url: "https://www.youtube.com/watch?v=Ca9GmeOKVN0",
   },
   {
@@ -343,8 +343,6 @@ export default function Home() {
               <div className="text-center">
                 <h2 className="heading text-4xl tracking-tight">About</h2>
                 <div className="mt-10 text-lg leading-8 tracking-wide text-[var(--dark)]/85">
-                  Studio to stage.
-                  <br />
                   Writing records. Producing artists. Leading live shows.
                 </div>
 
